@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD\\EcommerceDDD\\ApplicationApp\\ApplicationApp.csproj",
+      "projectUniqueName": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD\\ApplicationApp\\ApplicationApp.csproj",
       "projectName": "ApplicationApp",
-      "projectPath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD\\EcommerceDDD\\ApplicationApp\\ApplicationApp.csproj",
+      "projectPath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD\\ApplicationApp\\ApplicationApp.csproj",
       "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD\\EcommerceDDD\\ApplicationApp\\obj\\",
+      "outputPath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD\\ApplicationApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

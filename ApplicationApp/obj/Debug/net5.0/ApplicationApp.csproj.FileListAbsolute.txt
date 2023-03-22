@@ -10,3 +10,15 @@ C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\EcommerceDDD\ApplicationA
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ref\ApplicationApp.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.pdb
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\ApplicationApp.deps.json
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\ApplicationApp.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\ref\ApplicationApp.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\ApplicationApp.pdb
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.csproj.AssemblyReference.cache
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.AssemblyInfoInputs.cache
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.AssemblyInfo.cs
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.csproj.CoreCompileInputs.cache
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ref\ApplicationApp.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mIuJSAojCWsBZhDxwJkKf+znW+IZrqmkDdsQ/7BXOPuZXX+4cFFj6v91tTUlvGoyzKMky67RxGo9kKVs4efgIg==",
+  "dgSpecHash": "hYiFiEaetqVuYScsl5xpDekX4hy+CX/b7YX3KDjzGAF40vMsh5bM7ergo27i51wgggRLeGfnJ5pV7NdUCPrP9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD\\EcommerceDDD\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD\\Domain\\Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
