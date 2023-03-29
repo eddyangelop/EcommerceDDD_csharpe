@@ -26,4 +26,4 @@ C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\bin\Debug\
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\Domain.pdb
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\Entities.pdb
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.csproj.CopyComplete
-C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\refint\ApplicationApp.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\ref\ApplicationApp.dll
