@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZR7LVr2j7nyxpBUZr0Oe4y/E810uiQu44vz/C690+EH8Je1MaOtml/g3XsQX4mXkVtZA3PRWx38gTALWPv5U4g==",
+  "dgSpecHash": "qHo9ij/0bsL0+Fk+duyTWobALQZh7fo1bd52iJDyDg6oB/kgx55CdhVJaXqKQWCCfv5EaXhge8xBfklnR4d9kQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD_csharpe\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edson\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.17\\microsoft.aspnetcore.cryptography.keyderivation.5.0.17.nupkg.sha512",
