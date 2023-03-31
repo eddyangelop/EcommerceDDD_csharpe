@@ -972,11 +972,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD_csharpe\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\edson\\Downloads\\EcommerceDDD_csharpe\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD_csharpe\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\edson\\Downloads\\EcommerceDDD_csharpe\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\edson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD_csharpe\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\edson\\Downloads\\EcommerceDDD_csharpe\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

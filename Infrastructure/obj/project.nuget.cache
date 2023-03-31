@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fdOsXYdEidOl1MkoAnMX0Yz62+vBwrBEU4Aa9Mzko700WKZ0qSjuWWXBx/CkWGVlbFbRH4taWE7u47vL9VlVNQ==",
+  "dgSpecHash": "+eVz3P8bBL6wO2onghJqD+M8iSKaf9IfsBIsGgeTpVlQDGnVPq3byC36A/eiKnL5fu0qHdI0Sgno1NoalLmqdQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\edson\\Downloads\\Documents\\Dotnet\\EcommerceDDD_csharpe\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\edson\\Downloads\\EcommerceDDD_csharpe\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\edson\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\edson\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.17\\microsoft.aspnetcore.cryptography.internal.5.0.17.nupkg.sha512",
