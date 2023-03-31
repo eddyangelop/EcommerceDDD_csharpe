@@ -3,12 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
+
     [Table("TB_PRODUTO")]
     public class Produto : Notifies
     {
@@ -36,14 +35,15 @@ namespace Entities.Entities
         public decimal Valor { get; set; }
 
         [Column("PRD_QTD_ESTOQUE")]
-        [Display(Name = "Qauntidade Estoque")]
+        [Display(Name = "Quantidade Estoque")]
         public int QtdEstoque { get; set; }
 
-        [Display(Name ="Usuário")]
+        [Display(Name = "Usuário")]
         [ForeignKey("ApplicationUser")]
         [Column(Order = 1)]
         public string UserId { get; set; }
         public virtual ApplicationUser ApplicationUser { get; set; }
+
 
         [Column("PRD_ESTADO")]
         [Display(Name = "Estado")]
@@ -56,6 +56,5 @@ namespace Entities.Entities
         [Column("PRD_DATA_ALTERACAO")]
         [Display(Name = "Data de Alteração")]
         public DateTime DataAlteracao { get; set; }
-
     }
 }

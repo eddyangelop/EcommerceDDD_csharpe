@@ -1,11 +1,9 @@
 ﻿using Domain.Interfaces.Generics;
 using Infrastructure.Configuration;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +12,6 @@ namespace Infrastructure.Repository.Generics
 {
     public class RepositoryGenerics<T> : IGeneric<T>, IDisposable where T : class
     {
-
         private readonly DbContextOptions<ContextBase> _OptionsBuilder;
 
         public RepositoryGenerics()
@@ -22,20 +19,20 @@ namespace Infrastructure.Repository.Generics
             _OptionsBuilder = new DbContextOptions<ContextBase>();
         }
 
-        public async Task Add(T objeto)
+        public async Task Add(T Objeto)
         {
             using (var data = new ContextBase(_OptionsBuilder))
             {
-                await data.Set<T>().AddAsync(objeto);
+                await data.Set<T>().AddAsync(Objeto);
                 await data.SaveChangesAsync();
             }
         }
 
-        public async Task Delete(T objeto)
+        public async Task Delete(T Objeto)
         {
             using (var data = new ContextBase(_OptionsBuilder))
             {
-                data.Set<T>().Remove(objeto);
+                data.Set<T>().Remove(Objeto);
                 await data.SaveChangesAsync();
             }
         }
@@ -45,7 +42,6 @@ namespace Infrastructure.Repository.Generics
             using (var data = new ContextBase(_OptionsBuilder))
             {
                 return await data.Set<T>().FindAsync(Id);
-                
             }
         }
 
@@ -54,21 +50,20 @@ namespace Infrastructure.Repository.Generics
             using (var data = new ContextBase(_OptionsBuilder))
             {
                 return await data.Set<T>().AsNoTracking().ToListAsync();
-
             }
         }
 
-        public async Task Update(T objeto)
+        public async Task Update(T Objeto)
         {
             using (var data = new ContextBase(_OptionsBuilder))
             {
-                data.Set<T>().Update(objeto);
+                data.Set<T>().Update(Objeto);
                 await data.SaveChangesAsync();
             }
         }
 
 
-        #region disposed https://docs.microsoft.com/pt-br/dotnet/standard/garbage-collection/implementing-dispose
+        #region Disposed https://docs.microsoft.com/pt-br/dotnet/standard/garbage-collection/implementing-dispose
         // Flag: Has Dispose already been called?
         bool disposed = false;
         // Instantiate a SafeHandle instance.
@@ -76,7 +71,7 @@ namespace Infrastructure.Repository.Generics
 
 
 
-        // public implementation of Dispose pattern callable by consumers.
+        // Public implementation of Dispose pattern callable by consumers.
         public void Dispose()
         {
             Dispose(true);
@@ -84,12 +79,11 @@ namespace Infrastructure.Repository.Generics
         }
 
 
-
+        // Protected implementation of Dispose pattern.
         protected virtual void Dispose(bool disposing)
         {
             if (disposed)
                 return;
-
 
             if (disposing)
             {

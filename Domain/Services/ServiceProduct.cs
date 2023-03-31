@@ -3,13 +3,12 @@ using Domain.Interfaces.InterfaceServices;
 using Entities.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Domain.Services
 {
-    internal class ServiceProduct : IServiceProduct
+    public class ServiceProduct : IServiceProduct
     {
 
         private readonly IProduct _IProduct;
@@ -23,7 +22,7 @@ namespace Domain.Services
         {
             var validaNome = produto.ValidarPropriedadeString(produto.Nome, "Nome");
 
-            var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "valor");
+            var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "Valor");
 
             if (validaNome && validaValor)
             {
@@ -36,7 +35,7 @@ namespace Domain.Services
         {
             var validaNome = produto.ValidarPropriedadeString(produto.Nome, "Nome");
 
-            var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "valor");
+            var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "Valor");
 
             if (validaNome && validaValor)
             {

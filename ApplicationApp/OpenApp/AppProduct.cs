@@ -4,15 +4,13 @@ using Domain.Interfaces.InterfaceServices;
 using Entities.Entities;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace ApplicationApp.OpenApp
 {
-    internal class AppProduct : InterfaceProductApp
+    public class AppProduct : InterfaceProductApp
     {
-
         IProduct _IProduct;
         IServiceProduct _IServiceProduct;
         public AppProduct(IProduct IProduct, IServiceProduct IServiceProduct)
@@ -25,23 +23,20 @@ namespace ApplicationApp.OpenApp
         {
             await _IServiceProduct.AddProduct(produto);
         }
-
         public async Task UpdateProduct(Produto produto)
         {
             await _IServiceProduct.UpdateProduct(produto);
         }
 
 
-        public async Task Add(Produto objeto)
+        public async Task Add(Produto Objeto)
         {
-            await _IProduct.Add(objeto);
+            await _IProduct.Add(Objeto);
         }
-
-        public async Task Delete(Produto objeto)
+        public async Task Delete(Produto Objeto)
         {
-            await _IProduct.Delete(objeto);
+            await _IProduct.Delete(Objeto);
         }
-
         public async Task<Produto> GetEntityById(int Id)
         {
             return await _IProduct.GetEntityById(Id);
@@ -52,9 +47,9 @@ namespace ApplicationApp.OpenApp
             return await _IProduct.List();
         }
 
-        public async Task Update(Produto objeto)
+        public async Task Update(Produto Objeto)
         {
-            await _IProduct.Update(objeto);
+            await _IProduct.Update(Objeto);
         }
 
 

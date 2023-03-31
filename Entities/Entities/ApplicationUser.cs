@@ -4,13 +4,11 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-    public class ApplicationUser : IdentityUser
+    public class ApplicationUser : IdentityUser<string>
     {
         [Column("USR_CPF")]
         [MaxLength(50)]
@@ -29,7 +27,7 @@ namespace Entities.Entities
         [Column("USR_CEP")]
         [MaxLength(15)]
         [Display(Name = "CEP")]
-        public int Cep { get; set; }
+        public string CEP { get; set; }
 
         [Column("USR_ENDERECO")]
         [MaxLength(255)]
@@ -44,12 +42,12 @@ namespace Entities.Entities
         [Column("USR_CELULAR")]
         [MaxLength(20)]
         [Display(Name = "Celular")]
-        public int Celular { get; set; }
+        public string Celular { get; set; }
 
         [Column("USR_TELEFONE")]
         [MaxLength(20)]
         [Display(Name = "Telefone")]
-        public int Telefone { get; set; }
+        public string Telefone { get; set; }
 
         [Column("USR_ESTADO")]
         [Display(Name = "Estado")]
@@ -57,6 +55,6 @@ namespace Entities.Entities
 
         [Column("USR_TIPO")]
         [Display(Name = "Tipo")]
-        public TipoUsuario Tipo { get; set; }
+        public TipoUsuario? Tipo { get; set; }
     }
 }

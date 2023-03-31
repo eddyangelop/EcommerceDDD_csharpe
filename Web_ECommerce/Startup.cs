@@ -1,18 +1,26 @@
-using Infrastructure.Configuration;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Web_ECommerce.Data;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Infrastructure.Configuration;
+using Infrastructure.Repository.Repositories;
+using Infrastructure.Repository.Generics;
+using Domain.Interfaces.Generics;
+using Domain.Interfaces.InterfaceProduct;
+using ApplicationApp.Interfaces;
+using ApplicationApp.OpenApp;
+using Domain.Interfaces.InterfaceServices;
+using Domain.Services;
 
 namespace Web_ECommerce
 {
@@ -31,11 +39,22 @@ namespace Web_ECommerce
             services.AddDbContext<ContextBase>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDatabaseDeveloperPageExceptionFilter();
-
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ContextBase>();
             services.AddControllersWithViews();
+            services.AddRazorPages();
+
+            // INTERFACE E REPOSITORIO
+            services.AddSingleton(typeof(IGeneric<>), typeof(RepositoryGenerics<>));
+            services.AddSingleton<IProduct, RepositoryProduct>();
+
+            // INTERFACE APLICAÇÃO
+            services.AddSingleton<InterfaceProductApp, AppProduct>();
+
+            // SERVIÇO DOMINIO
+            services.AddSingleton<IServiceProduct, ServiceProduct>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,7 +63,7 @@ namespace Web_ECommerce
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseMigrationsEndPoint();
+                app.UseDatabaseErrorPage();
             }
             else
             {

@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Entities.Notifications
 {
@@ -18,7 +16,7 @@ namespace Entities.Notifications
         public string NomePropriedade { get; set; }
 
         [NotMapped]
-        public string Mensagem { get; set; }
+        public string mensagem { get; set; }
 
         [NotMapped]
         public List<Notifies> Notitycoes;
@@ -29,7 +27,7 @@ namespace Entities.Notifications
             {
                 Notitycoes.Add(new Notifies
                 {
-                    Mensagem = "Campo Obrigatório",
+                    mensagem = "Campo Obrigatório",
                     NomePropriedade = nomePropriedade
                 });
 
@@ -41,11 +39,12 @@ namespace Entities.Notifications
 
         public bool ValidarPropriedadeInt(int valor, string nomePropriedade)
         {
+
             if (valor < 1 || string.IsNullOrWhiteSpace(nomePropriedade))
             {
                 Notitycoes.Add(new Notifies
                 {
-                    Mensagem = "Valor deve ser maior que 0",
+                    mensagem = "Valor deve ser maior que 0",
                     NomePropriedade = nomePropriedade
                 });
 
@@ -53,15 +52,17 @@ namespace Entities.Notifications
             }
 
             return true;
+
         }
 
         public bool ValidarPropriedadeDecimal(decimal valor, string nomePropriedade)
         {
+
             if (valor < 1 || string.IsNullOrWhiteSpace(nomePropriedade))
             {
                 Notitycoes.Add(new Notifies
                 {
-                    Mensagem = "Valor deve ser maior que 0",
+                    mensagem = "Valor deve ser maior que 0",
                     NomePropriedade = nomePropriedade
                 });
 
@@ -69,8 +70,8 @@ namespace Entities.Notifications
             }
 
             return true;
-        }
 
+        }
 
 
     }
