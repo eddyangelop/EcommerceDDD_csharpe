@@ -24,8 +24,12 @@ namespace Domain.Services
 
             var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "Valor");
 
-            if (validaNome && validaValor)
+            var validaQtdProduto = produto.ValidarPropriedadeInt(produto.QtdEstoque, "QtdEstoque");
+
+            if (validaNome && validaValor && validaQtdProduto)
             {
+                produto.DataCadastro = DateTime.Now;
+                produto.DataAlteracao = DateTime.Now;
                 produto.Estado = true;
                 await _IProduct.Add(produto);
             }
@@ -37,8 +41,12 @@ namespace Domain.Services
 
             var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "Valor");
 
-            if (validaNome && validaValor)
+            var validaQtdProduto = produto.ValidarPropriedadeInt(produto.QtdEstoque, "QtdEstoque");
+
+            if (validaNome && validaValor && validaQtdProduto)
             {
+                produto.DataAlteracao = DateTime.Now;
+
                 await _IProduct.Update(produto);
             }
         }
