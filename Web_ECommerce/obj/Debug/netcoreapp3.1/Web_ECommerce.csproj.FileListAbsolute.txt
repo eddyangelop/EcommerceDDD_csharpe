@@ -342,7 +342,6 @@ C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.pdb
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.genruntimeconfig.cache
-C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\scopedcss\bundle\Web_ECommerce.styles.css
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
@@ -387,3 +386,4 @@ C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Error.cshtml.g.cs
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\scopedcss\bundle\Web_ECommerce.styles.css
