@@ -54,7 +54,7 @@ ObjetoVenda.CarregaProdutos = function () {
                 var idQtd = "qtd_" + Entitie.id;
 
                 htmlConteudo += "<label id='" + idNome + "'> Produto: " + Entitie.nome + "</label></br>";
-                htmlConteudo += "<label> valor=: " + Entitie.valor + "</label></br>";
+                htmlConteudo += "<label> valor: " + Entitie.valor + "</label></br>";
 
                 htmlConteudo += "Quantidade : <input type'number' value='1' id='" + idQtd + "'>";
 
@@ -74,6 +74,23 @@ ObjetoVenda.CarregaProdutos = function () {
 ObjetoVenda.CarregaQtdCarrinho = function () {
 
     $("#qtdCarrinho").text("(0)");
+
+    $.ajax({
+        type: 'GET',
+        url: "/api/QtdProdutosCarrinho",
+        dataType: "JSON",
+        cache: false,
+        async: true,
+        success: function (data) {
+
+            if (data.sucesso) {
+                $("#qtdCarrinho").text("(" + data.qtd + ")");
+            }
+
+        }
+
+    });
+
 
     setTimeout(ObjetoVenda.CarregaQtdCarrinho, 10000)
 }
