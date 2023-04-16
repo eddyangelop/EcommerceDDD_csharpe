@@ -10,15 +10,15 @@ ObjetoAlerta.AlertarTela = function (tipo, mensagem) {
 
     $("#AlertaJavaScript").html("");
 
-    //tipo
-    //1 alert-sucess
-    //2 alert-warning
-    //3 alert-danger
+    // tipo
+    // 1 alert-success
+    // 2 alert-warning
+    // 3 alert-danger
 
     var classeTipoAlerta = "";
 
     if (tipo == 1) {
-        classeTipoAlerta = "alert alert-sucess";
+        classeTipoAlerta = "alert alert-success";
     } else if (tipo == 2) {
         classeTipoAlerta = "alert alert-warning";
     } else if (tipo == 3) {
