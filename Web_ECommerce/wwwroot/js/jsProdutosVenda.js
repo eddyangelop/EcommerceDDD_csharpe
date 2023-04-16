@@ -19,14 +19,14 @@ ObjetoVenda.AdicionarCarrinho = function (idProduto) {
         success: function (data) {
 
             if (data.sucesso) {
-                //1 alert-sucess//2 alert-warning//3 alert-danger
-                ObjetoAlerta.AlertarTela(1, "Produto adicionado no carrinho!")
+                // 1 alert-success// 2 alert-warning// 3 alert-danger
+                ObjetoAlerta.AlertarTela(1, "Produto adicionado no carrinho!");
             }
             else {
-                //1 alert-sucess//2 alert-warning//3 alert-danger
-                ObjetoAlerta.AlertarTela(2, "Necessário efetuar login!!")
-
+                // 1 alert-success// 2 alert-warning// 3 alert-danger
+                ObjetoAlerta.AlertarTela(2, "Necessário efetuar o login!");
             }
+
         }
     });
 
@@ -53,8 +53,8 @@ ObjetoVenda.CarregaProdutos = function () {
                 var idNome = "nome_" + Entitie.id;
                 var idQtd = "qtd_" + Entitie.id;
 
-                htmlConteudo += "<label id='" + idNome + "'> Produto: " + Entitie.nome + "</label></br>";
-                htmlConteudo += "<label> valor: " + Entitie.valor + "</label></br>";
+                htmlConteudo += "<label id='" + idNome + "' > Produto: " + Entitie.nome + "</label></br>";
+                htmlConteudo += "<label>  Valor: " + Entitie.valor + "</label></br>";
 
                 htmlConteudo += "Quantidade : <input type'number' value='1' id='" + idQtd + "'>";
 
@@ -88,11 +88,10 @@ ObjetoVenda.CarregaQtdCarrinho = function () {
             }
 
         }
-
     });
 
 
-    setTimeout(ObjetoVenda.CarregaQtdCarrinho, 10000)
+    setTimeout(ObjetoVenda.CarregaQtdCarrinho, 10000);
 }
 
 $(function () {
