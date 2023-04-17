@@ -3,6 +3,7 @@ using Entities.Entities;
 using Entities.Entities.Enums;
 using Infrastructure.Configuration;
 using Infrastructure.Repository.Generics;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,6 @@ namespace Infrastructure.Repository.Repositories
 
         public RepositoryProduct()
         {
-
             _optionsbuilder = new DbContextOptions<ContextBase>();
         }
 
@@ -47,10 +47,13 @@ namespace Infrastructure.Repository.Repositories
                                                          Observacao = p.Observacao,
                                                          Valor = p.Valor,
                                                          QtdCompra = c.QtdCompra,
-                                                         IdProdutoCarrinho = c.Id
+                                                         IdProdutoCarrinho = c.Id,
+                                                         Url = p.Url
+
                                                      }).AsNoTracking().ToListAsync();
 
                 return produtosCarrinhoUsuario;
+
             }
         }
 
@@ -69,7 +72,8 @@ namespace Infrastructure.Repository.Repositories
                                                          Observacao = p.Observacao,
                                                          Valor = p.Valor,
                                                          QtdCompra = c.QtdCompra,
-                                                         IdProdutoCarrinho = c.Id
+                                                         IdProdutoCarrinho = c.Id,
+                                                         Url = p.Url
                                                      }).AsNoTracking().FirstOrDefaultAsync();
 
                 return produtosCarrinhoUsuario;
@@ -86,6 +90,6 @@ namespace Infrastructure.Repository.Repositories
             }
         }
 
-        
+
     }
 }

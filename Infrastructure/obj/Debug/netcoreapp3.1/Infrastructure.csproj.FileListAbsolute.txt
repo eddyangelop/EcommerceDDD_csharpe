@@ -12,11 +12,6 @@ C:\Projetos\EcommerceDDD\EcommerceDDD\Infrastructure\bin\Debug\netcoreapp3.1\Ent
 C:\Projetos\EcommerceDDD\EcommerceDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
 C:\Projetos\EcommerceDDD\EcommerceDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Projetos\EcommerceDDD\EcommerceDDD\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
-C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.AssemblyReference.cache
-C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
-C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
-C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
@@ -24,6 +19,11 @@ C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\bi
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\bin\Debug\netcoreapp3.1\Entities.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb

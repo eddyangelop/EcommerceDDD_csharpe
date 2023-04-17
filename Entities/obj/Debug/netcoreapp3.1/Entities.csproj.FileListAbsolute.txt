@@ -15,6 +15,7 @@ C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\bin\Debu
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\bin\Debug\netcoreapp3.1\Entities.runtimeconfig.dev.json
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\bin\Debug\netcoreapp3.1\Entities.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\obj\Debug\netcoreapp3.1\Entities.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfoInputs.cache
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\obj\Debug\netcoreapp3.1\Entities.AssemblyInfo.cs
@@ -22,4 +23,3 @@ C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\obj\Debu
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\obj\Debug\netcoreapp3.1\Entities.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\obj\Debug\netcoreapp3.1\Entities.pdb
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\obj\Debug\netcoreapp3.1\Entities.genruntimeconfig.cache
-C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Entities\obj\Debug\netcoreapp3.1\Entities.csproj.AssemblyReference.cache
