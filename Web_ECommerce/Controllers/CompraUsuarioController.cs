@@ -23,6 +23,46 @@ namespace Web_ECommerce.Controllers
         }
 
 
+        public async Task<IActionResult> FinalizarCompra()
+        {
+            var usuario = await _userManager.GetUserAsync(User);
+            var compraUsuario = await _InterfaceCompraUsuarioApp.CarrinhoCompras(usuario.Id);
+            return View(compraUsuario);
+        }
+
+
+        public async Task<IActionResult> MinhasCompras(bool mensagem = false)
+        {
+            var usuario = await _userManager.GetUserAsync(User);
+            var compraUsuario = await _InterfaceCompraUsuarioApp.ProdutosComprados(usuario.Id);
+
+            if (mensagem)
+            {
+                ViewBag.Sucesso = true;
+                ViewBag.Mensagem = "Compra efetivada com sucesso. Pague o boleto para garatir sua compra!";
+            }
+
+            return View(compraUsuario);
+        }
+
+
+        public async Task<IActionResult> ConfirmaCompra()
+        {
+            var usuario = await _userManager.GetUserAsync(User);
+
+            var sucesso = await _InterfaceCompraUsuarioApp.ConfirmaCompraCarrinhoUsuario(usuario.Id);
+
+            if (sucesso)
+            {
+                return RedirectToAction("MinhasCompras", new { mensagem = true });
+            }
+            else
+                return RedirectToAction("FinalizarCompra");
+
+        }
+
+
+
         [HttpPost("/api/AdicionarProdutoCarrinho")]
         public async Task<JsonResult> AdicionarProdutoCarrinho(string id, string nome, string qtd)
         {
@@ -47,7 +87,6 @@ namespace Web_ECommerce.Controllers
         [HttpGet("/api/QtdProdutosCarrinho")]
         public async Task<JsonResult> QtdProdutosCarrinho()
         {
-
             var usuario = await _userManager.GetUserAsync(User);
 
             var qtd = 0;
@@ -63,5 +102,4 @@ namespace Web_ECommerce.Controllers
         }
 
     }
-
 }
