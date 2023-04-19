@@ -1,25 +1,30 @@
-﻿using ApplicationApp.Interfaces;
-using Entities.Entities;
-using Entities.Entities.Enums;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApplicationApp.Interfaces;
+using Entities.Entities;
+using Entities.Entities.Enums;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Web_ECommerce.Models;
 
 namespace Web_ECommerce.Controllers
 {
-    public class CompraUsuarioController : Controller
+    public class CompraUsuarioController : HelpQrCode
     {
 
         public readonly UserManager<ApplicationUser> _userManager;
         public readonly InterfaceCompraUsuarioApp _InterfaceCompraUsuarioApp;
+        private IWebHostEnvironment _environment;
 
-        public CompraUsuarioController(UserManager<ApplicationUser> userManager, InterfaceCompraUsuarioApp InterfaceCompraUsuarioApp)
+
+        public CompraUsuarioController(UserManager<ApplicationUser> userManager, InterfaceCompraUsuarioApp InterfaceCompraUsuarioApp, IWebHostEnvironment environment)
         {
             _userManager = userManager;
             _InterfaceCompraUsuarioApp = InterfaceCompraUsuarioApp;
+            _environment = environment;
         }
 
 
@@ -39,7 +44,7 @@ namespace Web_ECommerce.Controllers
             if (mensagem)
             {
                 ViewBag.Sucesso = true;
-                ViewBag.Mensagem = "Compra efetivada com sucesso. Pague o boleto para garatir sua compra!";
+                ViewBag.Mensagem = "Compra efetivada com sucesso. Pague o boleto para garantir sua compra!";
             }
 
             return View(compraUsuario);
@@ -58,9 +63,17 @@ namespace Web_ECommerce.Controllers
             }
             else
                 return RedirectToAction("FinalizarCompra");
-
         }
 
+        public async Task<IActionResult> Imprimir()
+        {
+            var usuario = await _userManager.GetUserAsync(User);
+
+            var compraUsuario = await _InterfaceCompraUsuarioApp.ProdutosComprados(usuario.Id);
+
+            return await Download(compraUsuario, _environment);
+
+        }
 
 
         [HttpPost("/api/AdicionarProdutoCarrinho")]
@@ -99,6 +112,7 @@ namespace Web_ECommerce.Controllers
             }
 
             return Json(new { sucesso = false, qtd = qtd });
+
         }
 
     }
