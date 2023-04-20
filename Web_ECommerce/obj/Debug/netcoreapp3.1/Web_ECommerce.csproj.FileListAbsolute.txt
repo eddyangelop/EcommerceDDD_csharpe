@@ -399,8 +399,12 @@ C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.pdb
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.genruntimeconfig.cache
-C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\scopedcss\bundle\Web_ECommerce.styles.css
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\staticwebassets\Web_ECommerce.StaticWebAssets.Pack.cache
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.Web_ECommerce.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.Web_ECommerce.props
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.Web_ECommerce.props
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\Web_ECommerce\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.Web_ECommerce.props
