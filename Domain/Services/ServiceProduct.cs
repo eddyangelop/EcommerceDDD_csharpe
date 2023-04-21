@@ -4,6 +4,7 @@ using Entities.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -25,9 +26,9 @@ namespace Domain.Services
 
             var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "Valor");
 
-            var validaQtdProduto = produto.ValidarPropriedadeInt(produto.QtdEstoque, "QtdEstoque");
+            var validaQtdEstoque = produto.ValidarPropriedadeInt(produto.QtdEstoque, "QtdEstoque");
 
-            if (validaNome && validaValor && validaQtdProduto)
+            if (validaNome && validaValor && validaQtdEstoque)
             {
                 produto.DataCadastro = DateTime.Now;
                 produto.DataAlteracao = DateTime.Now;
@@ -36,9 +37,15 @@ namespace Domain.Services
             }
         }
 
-        public async Task<List<Produto>> ListarProdutosComEstoque()
+        public async Task<List<Produto>> ListarProdutosComEstoque(string descricao)
         {
-            return await _IProduct.ListarProdutos(p => p.QtdEstoque > 0);
+            if (string.IsNullOrWhiteSpace(descricao))
+                return await _IProduct.ListarProdutos(p => p.QtdEstoque > 0);
+            else
+            {
+                return await _IProduct.ListarProdutos(p => p.QtdEstoque > 0
+                && p.Nome.ToUpper().Contains(descricao.ToUpper()));
+            }
         }
 
         public async Task UpdateProduct(Produto produto)
@@ -47,9 +54,9 @@ namespace Domain.Services
 
             var validaValor = produto.ValidarPropriedadeDecimal(produto.Valor, "Valor");
 
-            var validaQtdProduto = produto.ValidarPropriedadeInt(produto.QtdEstoque, "QtdEstoque");
+            var validaQtdEstoque = produto.ValidarPropriedadeInt(produto.QtdEstoque, "QtdEstoque");
 
-            if (validaNome && validaValor && validaQtdProduto)
+            if (validaNome && validaValor && validaQtdEstoque)
             {
                 produto.DataAlteracao = DateTime.Now;
 
