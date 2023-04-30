@@ -139,3 +139,10 @@ C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerce
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\obj\Debug\netcoreapp3.1\UnitTestEcommerceDDD.dll
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\obj\Debug\netcoreapp3.1\UnitTestEcommerceDDD.pdb
 C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\obj\Debug\netcoreapp3.1\UnitTestEcommerceDDD.genruntimeconfig.cache
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\bin\Debug\netcoreapp3.1\testhost.exe
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\edson\Downloads\Documents\Dotnet\EcommerceDDD_csharpe\UnitTestEcommerceDDD\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
